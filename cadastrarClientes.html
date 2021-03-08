@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="js/main.js"></script>
+    <script src="js/cadastraCliente.js"></script>
+    <script src="js/cadastraProduto.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>.: 4Stock - Cadastrar Clientes:.</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">4Stock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="realizarVenda.html">Realizar Venda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="relatorioVendas.html">Relatório de
+                            Vendas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrarClientes.html">Cadastrar Cliente</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" onclick="" aria-current="page"
+                            href="clientesCadastrados.html">Clientes
+                            Cadastrados</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastrarProduto.html">Cadastrar Produto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="produtosCadastrados.html">Produtos
+                            Cadastrados</a>
+                    </li>
+
+                </ul>
+
+                <form class="formLogout">
+                    <button onclick="logOut()" type="submit" class="btn btn-primary" style="float: right">Sair</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+
+
+
+    <div class="container">
+        <div class="row cliente-form" style="width:600px; margin:0 auto;">
+            <form id="formCliente">
+                <div class="mb-3">
+                    <label for="nomeCliente" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nomeCliente" aria-describedby="emailHelp">
+                </div>
+
+                <div class="mb-3">
+                    <label for="sobrenomeCliente" class="form-label">Sobrenome:</label>
+                    <input type="text" class="form-control" id="sobrenomeCliente">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cpfCliente" class="form-label">CPF:</label>
+                    <input type="text" class="form-control" id="cpfCliente">
+                </div>
+
+                <div class="mb-3">
+                    <label for="enderecoCliente" class="form-label">Endereço:</label>
+                    <input type="text" class="form-control" id="enderecoCliente">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cidadeCliente" class="form-label">Cidade:</label>
+                    <input type="text" class="form-control" id="cidadeCliente">
+                </div>
+
+                <div class="mb-3">
+                    <label for="estadoCliente" class="form-label">Estado:</label>
+                    <input type="text" class="form-control" id="estadoCliente">
+                </div>
+
+                <button onclick="cadastraCliente() " type="button" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
